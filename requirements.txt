@@ -1,15 +1,13 @@
-streamlit
+streamlit==1.53.1
 langchain==1.2.6
 langchain-community==0.4.1
-langchain-mistralai>=0.1.0
-mistralai>=0.1.0
-faiss-cpu>=1.7.4
-python-dotenv>=1.0.0
-langdetect>=1.0.9
+langchain-mistralai==1.1.1
+mistralai==1.10.1
+faiss-cpu==1.13.2
+python-dotenv==1.2.1
+langdetect==1.0.9
 
-# Use only what you need instead of [all]
-unstructured[pdf]>=0.18.0
+unstructured[pdf]==0.18.27
 
-# magic file-type detection: Linux/macOS vs Windows
 python-magic==0.4.27 ; platform_system != "Windows"
 python-magic-bin==0.4.14 ; platform_system == "Windows"
