@@ -1,13 +1,16 @@
-streamlit==1.53.1
+streamlit>=1.30,<2
+
+python-dotenv>=1.0.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
 langchain==1.2.6
-langchain-community==0.4.1
-langchain-mistralai==1.1.1
-mistralai==1.10.1
-faiss-cpu==1.13.2
-python-dotenv==1.2.1
-langdetect==1.0.9
+langchain-community==0.3.0
+langchain-classic==1.0.1
 
-unstructured[pdf]==0.18.27
+langchain-mistralai==0.2.11
+mistralai==1.9.10
 
-python-magic==0.4.27 ; platform_system != "Windows"
-python-magic-bin==0.4.14 ; platform_system == "Windows"
+faiss-cpu>=1.7.4
+numpy
+pandas
