@@ -3,11 +3,11 @@ python-dotenv>=1.0.0
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 
-langchain==1.2.6
-langchain-core==1.2.7
-langchain-community==1.2.6
-langchain-classic==1.0.1
+# ✅ Keep LangChain + langchain-community in the SAME series (0.3.x)
+langchain==0.3.27
+langchain-community==0.3.27
 
+# ✅ Mistral integration (0.2.x line works with the 0.3-era ecosystem)
 langchain-mistralai==0.2.11
 mistralai==1.9.10
 
