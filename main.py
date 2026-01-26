@@ -3,7 +3,6 @@ import time
 import streamlit as st
 from dotenv import load_dotenv
 
-# ✅ v0.3 import path (documented)
 from langchain.chains.qa_with_sources.retrieval import RetrievalQAWithSourcesChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_mistralai import ChatMistralAI, MistralAIEmbeddings
@@ -16,7 +15,6 @@ st.set_page_config(page_title="Equity Research Tool", layout="wide")
 st.title("Equity Research Tool")
 st.sidebar.title("News Article URLs")
 
-# ✅ Prefer Streamlit Secrets over .env on Cloud
 MISTRAL_API_KEY = None
 try:
     MISTRAL_API_KEY = st.secrets.get("MISTRAL_API_KEY", None)
@@ -65,7 +63,7 @@ if process_url_clicked:
         st.warning("Enter at least one valid URL.")
     else:
         main_placeholder.info("Loading articles...")
-        loader = WebBaseLoader(web_paths=urls)  # ✅ lighter than UnstructuredURLLoader on Cloud
+        loader = WebBaseLoader(web_paths=urls)  
         data = loader.load()
 
         main_placeholder.info("Splitting text...")
