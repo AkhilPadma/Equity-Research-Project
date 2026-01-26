@@ -18,6 +18,6 @@ Uses ChatMistralAI as the language model to answer user queries.
 
 Returns answers along with references to the original sources.
 
-Interactive web application built with Streamlit
+Interactive web application built with Streamlit : https://equity-research-project-an8y9bmujc5bxwnt5d7867.streamlit.app/
 
 <img width="1918" height="914" alt="image" src="https://github.com/user-attachments/assets/004f6a2c-0901-4346-a414-f8163315e096" />
