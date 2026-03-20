@@ -83,6 +83,9 @@ class MistralEmbeddings:
     def embed_query(self, text):
         return mistral_embed([text])[0]
 
+    # ✅ This makes the object callable so FAISS can do embedding_function(text)
+    def __call__(self, text):
+        return self.embed_query(text)
 embeddings = MistralEmbeddings()
 
 # -----------------------------
