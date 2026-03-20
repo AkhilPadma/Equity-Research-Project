@@ -1,20 +1,14 @@
-# --- UI ---
 streamlit==1.53.1
-
-# --- Utils ---
 python-dotenv==1.0.1
 requests==2.32.5
 beautifulsoup4==4.14.3
 
-# --- LangChain stack (aligned) ---
 langchain==0.3.27
 langchain-community==0.3.27
 langchain-mistralai==0.2.11
 mistralai==1.9.10
 
-# --- Vector DB ---
 faiss-cpu==1.13.2
 
-# --- Data ---
 numpy==2.4.1
-pandas==3.0.0
+pandas==2.2.3
